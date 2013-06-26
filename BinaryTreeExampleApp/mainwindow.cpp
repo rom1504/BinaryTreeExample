@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     b->setRight(e);
     mScene=new QGraphicsScene();
     ui->graphicsView->setScene(mScene);
+    ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     mTreeViewer=new TreeViewer<double>(mScene,[](double & d){return QString::number(d);});
     mTreeViewer->drawBinaryTree2(a);
 }
