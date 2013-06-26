@@ -1,0 +1,3 @@
+[submodule "genericbinarytree"]
+	path = genericbinarytree
+	url = git@gitlab.rom1504.fr:rom1504/genericbinarytree.git
